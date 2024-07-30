@@ -11,8 +11,8 @@ class Category(models.Model):
     def __str__(self):
         return self.name
     
-    #def get_absolute_url(self):
-       # return reverse('list_catefory', args=[self.slug])
+    def get_absolute_url(self):
+        return reverse('list-category', args=[self.slug])
     
     
 class Product(models.Model):
