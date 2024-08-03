@@ -3,6 +3,9 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+admin.site.site_header = 'LD Store'
+admin.site.index_title = 'LD Adminstration'
+
 urlpatterns = [
     path('admin/', admin.site.urls), # Admin url
     path('', include('store.urls')), # Store url
